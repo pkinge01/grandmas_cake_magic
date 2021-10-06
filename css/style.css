@@ -1,0 +1,299 @@
+/*................................................... google font */
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+/*....................................................root variables */
+:root {
+  --pink: #ef7998;
+  --transppink: rgb(239, 121, 152, 0.7);
+  --yellow: rgb(249, 228, 148);
+  --white: #fff;
+  --black: #000;
+  --transpyellow: rgba(249, 228, 148, 0.8);
+  --transpwhite: rgba(252, 250, 250, 0.4);
+  --grey: rgb(238, 238, 238);
+}
+
+/*....................................................body */
+body {
+  font-family: "Kaushan Script", cursive;
+  background: var(--white);
+  color: var(--black);
+}
+
+/*....................................................nav links */
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: var(--white);
+  width: 100%;
+}
+.navbar-toggler {
+  outline: none !important;
+}
+.navbar-brand img {
+  width: 50px;
+}
+.toggler-icon {
+  font-size: 2.5rem;
+  color: var(--pink);
+}
+.nav-link {
+  color: var(--pink);
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.nav-link:hover {
+  color: var(--black);
+  background-color: rgb(239, 121, 152, 0.1);
+  border-radius: 10px;
+}
+.navbar-nav .active {
+  color: var(--black);
+  background-color: var(--transppink);
+  border-radius: 10px;
+}
+/*.........................................................info icons */
+.cart-info__icon {
+  color: var(--black);
+  cursor: pointer;
+}
+.cart-info {
+  border: 0.1rem solid var(--black);
+  color: var(--black);
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+.cart-info:hover {
+  background: var(--pink);
+  border-color: var(--pink);
+  color: var(--white);
+}
+.cart-info:hover .cart-info__icon {
+  color: var(--white);
+}
+
+/*...............................................................banner */
+.max-height {
+  min-height: 100vh;
+  background: url("../img/headerbg4.jpg") center/cover fixed no-repeat;
+  position: relative;
+}
+.banner {
+  color: var(--white);
+  background: linear-gradient(rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
+}
+.welcome-wish {
+  color: var(--white);
+  text-shadow: 2px 2px var(--black);
+}
+.banner-title {
+  color: var(--pink);
+  font-size: 4rem;
+  text-shadow: 2px 2px var(--black);
+}
+.banner-link {
+  font-size: 1.5rem;
+  color: var(--black);
+  border: 0.2rem solid var(--black);
+}
+.banner-link:hover {
+  background: var(--black);
+  color: var(--pink);
+}
+
+/*....................................................................cart  */
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  background: var(--white);
+  top: 10;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  background: rgb(239, 121, 152, 0.9);
+  width: 0;
+  overflow: hidden;
+  border-bottom: 5px double var(--black);
+}
+.show-cart {
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotateY(-360deg);
+}
+.cart-item {
+  transition: all 2s ease-in-out;
+}
+
+/*...............................................................cart item */
+.cart-item-remove {
+  color: var(--pink);
+  transition: all 1s ease-in-out;
+}
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  color: var(--black);
+}
+#cart-item-price {
+  font-size: 0.8rem;
+}
+
+/*..................................................................cart buttons */
+.btn-yellow {
+  color: var(--pink) !important;
+  border-color: var(--black) !important;
+  background: var(--grey) !important;
+}
+.btn-yellow:hover {
+  background: var(--yellow) !important;
+  color: var(--black) !important;
+}
+.btn-black {
+  color: var(--black) !important;
+  border-color: var(--black) !important;
+}
+.btn-black:hover {
+  color: var(--pink) !important;
+  background: var(--black) !important;
+}
+
+/*....................................................................about */
+.about-img__container {
+  position: relative;
+}
+.about-img__container::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.5rem solid var(--yellow);
+  z-index: -1;
+  transition: all 1s ease-in-out;
+}
+.about-img__container:hover:before {
+  top: 0;
+  left: 0;
+}
+/*.......................................................................product items */
+.product {
+  background: var(--grey);
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.product-img {
+  transition: all 1s ease-in-out;
+}
+.img-container:hover .product-img {
+  transform: scale(1.2);
+}
+.product-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: var(--yellow);
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+.img-container:hover .product-item-icon {
+  transform: translate(0, 0);
+}
+.product-item-icon:hover {
+  color: var(--white);
+}
+.product-item-value {
+  color: --yellow;
+}
+
+.search-box {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.footer {
+  background-color: var(--pink);
+}
+.footer p {
+  text-align: center;
+  color: var(--black);
+}
+.footer h4 {
+  text-decoration: underline;
+  text-align: right;
+  margin-right: 20px;
+}
+/*..................................................Button to open the contact form */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 200px;
+}
+
+/*.......................................................................popup form */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/*....................................................................form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/*..........................................................Full-width input fields */
+.form-container input[type="text"],
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type="text"]:focus,
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/*.............................................................submit/login button */
+.form-container .btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/*...................................................................cancel button */
+.form-container .cancel {
+  background-color: rgba(250, 7, 7, 0.733);
+}
+
+/*...................................................................buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}

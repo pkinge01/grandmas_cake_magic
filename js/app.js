@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // Tells the function to wait to execute until everything on the page has loaded.
+  // says this function to wait to execute until everything on the page has loaded.
   $(window).scroll(function () {
     // Says this function is preformed continuisly while scrolling.
     var Scroll = $(window).scrollTop() + 1, // This variable finds the distance you have scrolled from the top.
